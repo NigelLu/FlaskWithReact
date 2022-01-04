@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <h1>Welcome {{name}}</h1>
+
+    <hr>
+
+    {% for todo in todos %}
+        <ul>
+            <li>{{todo.content}}</li>
+        </ul>
+    {% endfor %}
+{% endblock content%}
